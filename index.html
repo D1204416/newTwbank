@@ -1,0 +1,225 @@
+<!DOCTYPE html >
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>臺灣銀行-學雜費入口網</title>
+    <link type="text/css" rel="stylesheet" href="css/whole.css"/>
+    <link type="text/css" rel="stylesheet" href="css/text.css"/>
+
+
+</head>
+
+<body>
+<form method="post" action="index.html" id="form1">
+    <div id="container">
+        <!--begin of header -->
+        <div id="header">
+            <div id="logo">
+                <a href="javascript:void(0);"
+                   onclick="location.assign('http://localhost:63342/newTwbanktest/index.html');">
+                    <img src="img/logo.png" style="vertical-align: middle;margin-top: 6px;" width="350"
+                         alt="臺灣銀行"/>
+                </a>
+            </div>
+
+            <div id="channel">
+                <ul>
+                    <li><a href="javascript:void(0);"
+                           onclick="window.open('https://bills.bot.com.tw/');"><span>帳單代收</span></a></li>
+
+                    <li><a href="javascript:void(0);"
+                           onclick="window.open('https://sloan.bot.com.tw/newsloan/login/SLoanLogin.action');"><span>就學貸款</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);"
+                           onclick="window.open('https://ebank.bot.com.tw/NetBank/NNBank/Default.aspx');"><span>網路銀行</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);"
+                           onclick="window.open('https://ebank.bot.com.tw/NetBank/NNBank/Default.aspx');"><span>網路ATM</span></a><input
+                            name="ucEntryHeader$user_count" type="hidden" id="ucEntryHeader_user_count"/><input
+                            name="ucEntryHeader$hdLang" type="hidden" id="ucEntryHeader_hdLang"/></li>
+
+                    <li class="lang_dropdown">
+                        <a href="javascript:void(0);"><span id="selectedLang"> 繁體中文 ▼</span></a>
+                        <div class="lang_dropdown-content">
+                            <span><a href="https://school.bot.com.tw/newTwbank/StudentLogin.aspx">繁體中文</a></span>
+                            <span><a href="https://school.bot.com.tw/newTwbank/StudentLogin.aspx">日本語</a></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--end of header -->
+
+        <!--begin of content -->
+        <div id="bg">
+            <!--begin of content -->
+            <div id="content">
+                <!--begin of menu -->
+                <div id="menu">
+
+                    <ul>
+                        <li id="SchoolLoginItem"><a href="https://school.bot.com.tw/newTwbank/SchoolLogin.aspx"
+                                                    class="school"><span>學校經辦</span></a>
+                        </li>
+
+                        <li id="StudentLoginItem"><a href="index.html"
+                                                     class="student"><span>繳費單查詢<br/><span style="font-size:10pt">(原「學生登入」)</span></span></a>
+                        </li>
+
+                        <li id="CreditCardItem"><a href="https://school.bot.com.tw/newTwbank/CreditCard.aspx"
+                                                   class="creditCard"><span>信用卡繳費</span></a></li>
+
+                        <li id="UnionPayItem"><a href="https://school.bot.com.tw/newTwbank/UnionPay.aspx"
+                                                 class="unionPay"><span>銀聯卡專區</span></a>
+                        </li>
+
+                        <li id="ReceiptItem"><a href="https://school.bot.com.tw/newTwbank/Receipt.aspx" class="receipt"><span>列印收據</span></a>
+                        </li>
+
+                        <li id="OpinionItem"><a href="https://school.bot.com.tw/newTwbank/Opinion.aspx" class="opinion"><span>意見聯繫</span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!--end of menu -->
+
+                <!--begin of main -->
+                <div id="main">
+                    <div class="title">
+                        繳費單查詢<span>Bill Inquire</span>
+                    </div>
+
+                    <div id="loginBox_2">
+                        <table>
+                            <tr>
+                                <th class="auto-style1">
+                                    <span id="MyLabel2">代收類別</span>：
+                                </th>
+                                <td>
+                                    <input name="txtReceiveType" type="text" id="txtReceiveType" maxlength="12"
+                                           size="25" autocomplete="off" placeholder="　請輸入代收類別"/>&nbsp;&nbsp;
+
+                                    <a href="javascript:void(0);"
+                                       onclick="window.open('https://school.bot.com.tw/newTwbank/img/RTExample.png', '_blank', 'width=600,height=400');"><span>範例</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="auto-style1">
+                                    <span id="cclabIdNumber">身分證字號</span>：
+                                </th>
+                                <td>
+                                    <input name="txtIdNumber" type="text" id="txtIdNumber" maxlength="12" size="25"
+                                           autocomplete="off" placeholder="　請輸入身分證字號"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="auto-style1">
+                                    <span id="cclabStudentId">學號</span>：
+                                </th>
+                                <td>
+                                    <input name="txtStudentId" type="text" id="txtStudentId" maxlength="20" size="25"
+                                           autocomplete="off" placeholder="　請輸入學號"/></td>
+                            </tr>
+                            <tr>
+                                <th class="auto-style1">
+                                    <span id="cclabBirthday">識別碼</span>：
+                                </th>
+                                <td>
+                                    <input name="txtBd" type="text" id="txtBd" maxlength="8" size="25"
+                                           autocomplete="off" placeholder="　請輸入識別碼(預設值為生日)"/>&nbsp;&nbsp;
+                                    <a href="javascript:void(0);"
+                                       onclick="window.open('https://school.bot.com.tw/newTwbank/img/ACExplain.png', 'user_info_window', 'width=600,height=400');"><span>說明</span>
+                                    </a>
+
+                                </td>
+                            </tr>
+                            <tr id="rowPicIdentify">
+                                <th class="auto-style1">
+                                    <span id="MyLabel1">圖型驗證碼</span>：
+                                </th>
+                                <td>
+                                    <input name="TextBox1" type="text" maxlength="4" id="TextBox1" autocomplete="off"
+                                           style="width:82px;"/>
+                                    <input type="image" name="ImageButton2" id="ImageButton2" src="img/icon/trumpet.png"
+                                           align="absmiddle" onclick="playCaptchaSound();return false;"
+                                           style="border-style:None;height:32px;width:36px;"/>
+                                    <input type="image" name="ImageButton1" id="ImageButton1" src="ValidatePicPage.aspx"
+                                           align="absmiddle"/>&nbsp;&nbsp
+                                    <input type="submit" name="Button1" value="重新產生" id="Button1" class="btnRenew"/>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    <div class="button">
+
+                                        <input type="submit" name="ccbtnLogon" value="確認登入" id="ccbtnLogon"
+                                               class="btnPrimary" onclick="openNewWindow()"/>
+                                        <br/>
+                                        <input type="submit" name="ccbtnForget" value="識別碼重設" id="ccbtnForget"
+                                               class="btnPrimary"/>
+                                        <p style="color:red;font-size:16px;font-weight: bold">
+                                            (需輸入代收類別、身分證字號、學號、圖型驗證碼)</p>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--公告事項-->
+                    <div class="bulletin_label">
+                        <p>公告事項</p>
+                    </div>
+                    <div id="bulletin">
+                        <ul>
+                            <li>親愛的客戶您好！為強化個人資料保護，本行預計於<span style="color: rgb(255, 0, 0);"><b
+                                    style="color: rgb(255, 0, 0);">112年10月2日起，調整「學生登入」服務</b></span>，項目如下：<br>(1)原「學生登入」服務將調整名稱為「繳費單查詢」服務，另新增「代收類別」及「識別碼」檢核欄位及移除「生日」欄位。<br>(2)「代收類別」欄位可於紙本繳費單之代收單位留存聯或電子郵件繳費通知查得，或可利用線上查詢服務，以學校所在地區或學校名稱之關鍵字查詢。<br>(3)「識別碼」欄位預設值為學生之生日，格式為YYYMMDD(共7碼，YYY為民國年)，例如民國70年5月3日請填入0700503。如有變更「識別碼」之需求，於登入後點擊「變更識別碼」服務，並經設定電子郵件信箱後始可變動之。<br>(4)如有忘記「識別碼」之情形，可點擊「識別碼重設」服務並經驗證所綁定之電子郵件信箱後，即可重新設定「識別碼」。<br>(5)「識別碼」欄位如有連續輸入錯誤達5次之情形，將暫停使用「繳費單查詢」服務30分鐘。
+                            </li>
+                            <li>若您無法登入：
+                                <ol>
+                                    <li>留意貴校是否加入本行學雜費代收。
+                                    <li>繳費單是由學校寄發或自行上網列印，請向學校查詢，是否已上傳或寄出。</li>
+                                    <li>
+                                        學生若無法由「學生登入」進入本系統列印繳費單，通常是學校之資料尚未上傳，請向貴校查詢資料是否已經上傳。
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                為了預防您離開電腦太久，致遭他人竊用，離開本網站時，敬請務必執行登出，以保障您的權益及帳戶安全！
+                            </li>
+                            <li>若您逾<font color='red'>10分鐘</font>未做任何交易，本系統將自動執行登出。</li>
+                        </ul>
+
+                    </div>
+                    <!--end of bulletin-->
+
+                    <div id="dialog-config" title="代收類別查詢"></div>
+
+                </div>
+                <!--end of main -->
+            </div>
+            <!--end of content -->
+        </div>
+        <!--end of bg-->
+
+        <!--begin of footer -->
+        <div id="footer">
+
+            <p><a href='https://www.bot.com.tw/Protect/Pages/default.aspx' target='_blank' rel='noopener noreferrer'>【隱私權聲明】</a><a
+                    href='https://enotice.bot.com.tw/BotSecAnnounce/Common_Home_Security.html' target='_blank'
+                    rel='noopener noreferrer'>【安全宣言】</a><br/>臺灣銀行版權所有 Bank of Taiwan All Rights
+                Reserved.<br/>建議使用Google Chrome、Firefox 或 IE 10以上版本，以獲得較佳使用體驗。</p>
+        </div>
+        <!--end of footer -->
+    </div>
+
+</form>
+<script src="js/inputReload.js"></script>
+</body>
+</html>

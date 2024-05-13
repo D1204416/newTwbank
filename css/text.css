@@ -1,0 +1,47 @@
+
+#webTitle a, .title p, .masthead p, .button {
+    font-family: 蘋果儷中黑, 微軟正黑體, 新細明體, Arial, Helvetica, sans-serif;
+}
+
+.auto-style1 {
+    width: 118px;
+}
+
+
+div.ext-box {
+    display: table;
+    width: 100%;
+}
+
+div.int-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.divLeft {
+    width: 200px; /*DIV區塊寬度*/
+    height: 100px;
+    line-height: 30px; /*DIV區塊高度*/
+    /*padding: 5px; DIV區塊內距，參閱：CSS padding 內距。*/
+    /*border: 2px blue solid; DIV區塊邊框，參閱：CSS border 邊框設計。*/
+    margin-right: 5px; /*靠右外距，參閱：CSS margin 邊界使用介紹範例教學。*/
+    float: left;
+}
+
+.divRight {
+    /*width: 200px;*/
+    line-height: 20px;
+    padding: 5px;
+    /*border: 2px green solid;*/
+    float: left;
+}
+
+/*
+.ui-dialog-titlebar-close {
+    display: none;
+}
+*/
+.ui-icon-closethick {
+    margin-top: -8px !important;
+    margin-left: -8px !important;
+}
